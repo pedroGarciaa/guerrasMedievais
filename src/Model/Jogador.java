@@ -17,6 +17,13 @@ public class Jogador {
 	private Carta[] carta;
 	private Tabuleiro tabuleiro;
 
+	public Jogador(String nomeJogador){
+		this.nomeJogador=nomeJogador;
+		this.moedas=3;
+		this.tokenNegativo=0;
+		this.tokenPositivo=0;
+		this.pontos=0;
+	}
 	
 	public String getNomeJogador() {
 		return nomeJogador;
