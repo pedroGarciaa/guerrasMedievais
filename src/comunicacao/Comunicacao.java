@@ -81,7 +81,7 @@ public class Comunicacao {
 		nome = jogador.getNomeJogador();
 		moedas = jogador.getMoedas();
 		
-		mensagem = ""+ idMen + " "+ nome + " " + moedas + " " + idCarta;
+		mensagem = ""+ idMen + "#"+ nome + "#" + moedas + "#" + idCarta;
 		
 		enviar(mensagem,ip);
 	}
