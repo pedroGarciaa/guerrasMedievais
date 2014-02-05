@@ -70,6 +70,7 @@ public class Comunicacao {
 	 * IDS:
 	 * 0 - Construi Carta
 	 * 1 - Descartar Carta
+	 * 2 - Comprar recurso
 	 * @param idMen Qual tipo de mensagem é.
 	 * @param jogador O jogador deste dispositivo
 	 * @param idCarta Id da carta que este jogador selecionou
@@ -82,6 +83,31 @@ public class Comunicacao {
 		moedas = jogador.getMoedas();
 		
 		mensagem = ""+ idMen + "#"+ nome + "#" + moedas + "#" + idCarta;
+		
+		enviar(mensagem,ip);
+	}
+	
+	/**
+	 * 
+	 * Esse método envia a ação, que este jogador realizou, para o host.
+	 * @param idMen Qual o tipo de mensagem
+	 * @param jogador Jogador desse dispositivo
+	 * @param vizinho Jogador do qual foi comprado o recurso
+	 * @param idCartaC Id da carta que foi comprada
+	 * @param idCartaU Id da carta que foi construida
+	 * @param moedasV Moedas que o  vizinho ganhou.
+	 */
+	public void enviaAcao(int idMen, Jogador jogador, Jogador vizinho, int idCartaC, int idCartaU, int moedasV){
+		String mensagem,nomeJ,nomeV;
+		int moedas;
+		
+		nomeJ = jogador.getNomeJogador();
+		nomeV = vizinho.getNomeJogador();
+		
+		moedas = jogador.getMoedas();
+		
+		mensagem = "" + idMen+ "#" + nomeJ + "#" + moedas + "#"
+		+ idCartaC + "#" + nomeV + "#" + moedasV + "#" + idCartaU;
 		
 		enviar(mensagem,ip);
 	}

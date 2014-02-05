@@ -52,6 +52,8 @@ public class ComunicacaoAsyncTask extends AsyncTask {
 		int idCarta = 0;
 		if (men.charAt(0) == '0')
 			traduzirConsDescCarta(men, jogador, idCarta);
+		if (men.charAt(0) == '1')
+			traduzirConsDescCarta(men, jogador, idCarta);
 	}
 	/**
 	 * 
