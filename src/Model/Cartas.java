@@ -1,4 +1,6 @@
-package classesUML;
+package Model;
+
+
 
 public class Cartas {
 

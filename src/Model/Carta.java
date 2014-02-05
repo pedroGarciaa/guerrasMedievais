@@ -1,9 +1,12 @@
-package classesUML;
+package Model;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
-public class String {
+public interface Carta {
+
+	
+	public void definirFuncao(Carta carta);
 
 }

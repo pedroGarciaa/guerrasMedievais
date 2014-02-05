@@ -1,4 +1,4 @@
-package classesUML;
+package Model;
 
 import android.os.Bundle;
 import android.app.Activity;
