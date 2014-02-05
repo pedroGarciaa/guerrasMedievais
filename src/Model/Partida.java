@@ -11,6 +11,7 @@ public class Partida {
 	private int ganhador;
 	private Jogador[] jogador;
 
+	
 	public int getRodada() {
 		return rodada;
 	}
@@ -59,7 +60,7 @@ public class Partida {
 	}
 
 	public void finalizaMao() {
-
+		
 	}
 
 }

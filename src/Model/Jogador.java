@@ -12,10 +12,12 @@ public class Jogador {
 	private int tokenPositivo;
 	private int tokenNegativo;
 	private int moedas;
+	private int forca;
 	private Partida partida;
 	private Jogador jogador;
 	private Carta[] carta;
 	private Tabuleiro tabuleiro;
+	
 
 	public Jogador(String nomeJogador){
 		this.nomeJogador=nomeJogador;
@@ -65,6 +67,15 @@ public class Jogador {
 		this.moedas = moedas;
 	}
 
+	public int getForca() {
+		return forca;
+	}
+
+	public void setForca(int forca) {
+		this.forca = forca;
+	}
+
+	
 	public Partida getPartida() {
 		return partida;
 	}
@@ -93,16 +104,25 @@ public class Jogador {
 
 	}
 
-	public void GuerrearVizinho(Jogador Jogador, Jogador Vizinho) {
-
+	public void GuerrearVizinho(Jogador jogador, Jogador vizinho1) {
+		medirForcas(jogador, vizinho1);
 	}
 
 	public void trocarCartas(Jogador jogador, Jogador vizinho) {
 
 	}
 
-	public void medirForcas() {
+	public void medirForcas(Jogador jogador, Jogador vizinho) {
+		
+		if(jogador.getForca()>vizinho.getForca()){
+			System.out.println("Jogador é vencedor da guerra!");
+		}else{
+			System.out.println("Vizinho é vencedor da guerra!");
+		}if(jogador.getForca() == vizinho.getForca()){
+			System.out.println("Houve um empate no combate");
+		}
+		
 
-	}
-
+}
+	
 }
