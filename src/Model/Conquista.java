@@ -18,7 +18,6 @@ public class Conquista implements Carta {
 
 	@Override
 	public void definirFuncao(Carta carta) {
-		// TODO Auto-generated method stub
 		
 	}
 

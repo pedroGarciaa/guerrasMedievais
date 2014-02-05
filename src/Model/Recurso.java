@@ -8,7 +8,8 @@ import android.view.Menu;
 public class Recurso extends CartaDecorator {
 
 	private String tipo;
-
+	private int quantidade;
+	
 	public String getTipo() {
 		return tipo;
 	}
@@ -24,7 +25,5 @@ public class Recurso extends CartaDecorator {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
-
-	private int quantidade;
 
 }

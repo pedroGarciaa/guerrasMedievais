@@ -6,7 +6,6 @@ import android.view.Menu;
 
 public interface Carta {
 
-	
 	public void definirFuncao(Carta carta);
 
 }

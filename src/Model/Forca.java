@@ -8,7 +8,8 @@ import android.view.Menu;
 public class Forca extends CartaDecorator {
 
 	private int forca;
-
+	private String descricao;
+	
 	public int getForca() {
 		return forca;
 	}
@@ -24,7 +25,4 @@ public class Forca extends CartaDecorator {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-
-	private String descricao;
-
 }

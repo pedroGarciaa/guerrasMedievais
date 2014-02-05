@@ -8,6 +8,8 @@ import android.view.Menu;
 public class Bonus extends CartaDecorator {
 
 	private int id;
+	private int valor;
+	private String descricao;
 
 	public int getId() {
 		return id;
@@ -32,9 +34,5 @@ public class Bonus extends CartaDecorator {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-
-	private int valor;
-
-	private String descricao;
 
 }

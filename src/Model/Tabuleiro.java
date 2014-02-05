@@ -7,11 +7,8 @@ import android.view.Menu;
 public class Tabuleiro {
 
 	private int idTabuleiro;
-
 	private int descricaoTabuleiro;
-
 	private Carta[] carta;
-
 	private Conquista[] conquista;
 
 	public int getIdTabuleiro() {

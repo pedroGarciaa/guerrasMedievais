@@ -5,6 +5,10 @@ package Model;
 public class Cartas {
 
 		private int idCarta;
+		private String nomeCarta;
+		private String requisitos;
+		private int valorPontos;
+		private String descricao;
 
 		public int getIdCarta() {
 			return idCarta;
@@ -45,15 +49,6 @@ public class Cartas {
 		public void setDescricao(String descricao) {
 			this.descricao = descricao;
 		}
-
-		private String nomeCarta;
-
-		private String requisitos;
-
-		private int valorPontos;
-
-		private String descricao;
-
 		public void definirFuncao(Carta carta) {
 		}
 

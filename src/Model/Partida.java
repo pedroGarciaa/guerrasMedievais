@@ -7,6 +7,9 @@ import android.view.Menu;
 public class Partida {
 
 	private int rodada;
+	private int sentido;
+	private int ganhador;
+	private Jogador[] jogador;
 
 	public int getRodada() {
 		return rodada;
@@ -31,13 +34,6 @@ public class Partida {
 	public void setGanhador(int ganhador) {
 		this.ganhador = ganhador;
 	}
-
-	private int sentido;
-
-	private int ganhador;
-
-	private Jogador[] jogador;
-
 	public void distribuirComponentes() {
 
 	}
