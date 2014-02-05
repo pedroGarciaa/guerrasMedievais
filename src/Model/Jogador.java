@@ -8,7 +8,16 @@ import android.view.Menu;
 public class Jogador {
 
 	private String nomeJogador;
+	private int pontos;
+	private int tokenPositivo;
+	private int tokenNegativo;
+	private int moedas;
+	private Partida partida;
+	private Jogador jogador;
+	private Carta[] carta;
+	private Tabuleiro tabuleiro;
 
+	
 	public String getNomeJogador() {
 		return nomeJogador;
 	}
@@ -72,22 +81,6 @@ public class Jogador {
 	public void setTabuleiro(Tabuleiro tabuleiro) {
 		this.tabuleiro = tabuleiro;
 	}
-
-	private int pontos;
-
-	private int tokenPositivo;
-
-	private int tokenNegativo;
-
-	private int moedas;
-
-	private Partida partida;
-
-	private Jogador jogador;
-
-	private Carta[] carta;
-
-	private Tabuleiro tabuleiro;
 
 	public void contarPontos(Carta[] Cartas) {
 
