@@ -7,10 +7,16 @@ import android.view.Menu;
 public class Tabuleiro {
 
 	private int idTabuleiro;
-	private int descricaoTabuleiro;
+	private String descricaoTabuleiro;
 	private Carta[] carta;
 	private Conquista[] conquista;
 
+	public Tabuleiro(int idTabuleiro, String descricaoTabuleiro, Conquista[] conquista){
+		this.idTabuleiro=idTabuleiro;
+		this.descricaoTabuleiro=descricaoTabuleiro;
+		this.conquista=conquista;
+		
+	}
 	public int getIdTabuleiro() {
 		return idTabuleiro;
 	}
@@ -19,11 +25,11 @@ public class Tabuleiro {
 		this.idTabuleiro = idTabuleiro;
 	}
 
-	public int getDescricaoTabuleiro() {
+	public String getDescricaoTabuleiro() {
 		return descricaoTabuleiro;
 	}
 
-	public void setDescricaoTabuleiro(int descricaoTabuleiro) {
+	public void setDescricaoTabuleiro(String descricaoTabuleiro) {
 		this.descricaoTabuleiro = descricaoTabuleiro;
 	}
 

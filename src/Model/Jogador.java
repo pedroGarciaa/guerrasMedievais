@@ -104,25 +104,25 @@ public class Jogador {
 
 	}
 
-	public void GuerrearVizinho(Jogador jogador, Jogador vizinho1) {
-		medirForcas(jogador, vizinho1);
+	public void GuerrearVizinho(Jogador vizinho) {
+		medirForcas(vizinho);
 	}
 
 	public void trocarCartas(Jogador jogador, Jogador vizinho) {
 
 	}
 
-	public void medirForcas(Jogador jogador, Jogador vizinho) {
+	public String medirForcas(Jogador vizinho) {
 		
 		if(jogador.getForca()>vizinho.getForca()){
-			System.out.println("Jogador é vencedor da guerra!");
-		}else{
-			System.out.println("Vizinho é vencedor da guerra!");
-		}if(jogador.getForca() == vizinho.getForca()){
-			System.out.println("Houve um empate no combate");
-		}
+			return "Jogador é vencedor da guerra!";
 		
-
+		}if(jogador.getForca() == vizinho.getForca()){
+			return "Houve um empate";
+			
+		}else
+			return "Vizinho é vencedor";
+		}		
+		
 }
 	
-}
